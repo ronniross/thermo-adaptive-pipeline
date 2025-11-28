@@ -33,3 +33,9 @@ As chips get larger and more complex, memory bandwidth requirements explode, bec
 contributing to the scale of overall Power Usage Effectiveness (PUE) of a data center.
 
 The efficiency gains have been overwhelmed by the demand for exponentially more computation, leading to a critical thermal management crisis that demands radically new cooling solutions at the software, hardware and social levels.
+
+
+---
+
+Ronni Ross  
+2025
