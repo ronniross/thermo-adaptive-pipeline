@@ -96,6 +96,152 @@ Because of the physics of these pollutants, they create "hotspots."
 * **$NO_x$ and PM** hang in the air *locally*.
 This means communities living next to "Hyperscale" AI data centers face a **direct health risk** from the exhaust of backup generators, distinct from the global climate change risk of the electricity usage.
 
+
+## 5. Pipeline Emissions
+
+### 5.1. Training and Fine Tuning Processes
+
+The initial creation of a model is the most concentrated source of emissions. A seminal study from the University of Massachusetts, Amherst, found that training a single large AI model can emit over 626,000 pounds (284,000 kg) of carbon dioxide equivalent. Nearly five times the lifetime emissions of an average western cars.
+https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/ https://news.climate.columbia.edu/2023/06/09/ais-growing-carbon-footprint/ https://jpt.spe.org/training-single-ai-model-can-emit-much-carbon-five-cars-their-lifetimes 
+https://news.mit.edu/2020/artificial-intelligence-ai-carbon-footprint-0423 https://www.supermicro.com/en/article/ai-training-5-tips-reduce-environmental-impact https://medium.com/@rogt.x1997/ais-dirty-secret-how-gpt-3-consumed-1-287-mwh-and-emitted-the-same-co%E2%82%82-as-112-cars-5e43b85eb600 https://www.embedl.com/knowledge/thecarbonfootprintofai.com https://icecat.com/is-ai-truly-a-sustainable-choice/ https://carboncredits.com/how-big-is-the-co2-footprint-of-ai-models-chatgpts-emissions/ https://projectexigence.eu/green-ict-digest/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/ 
+
+### 5.2 Inference Emissions
+
+While training is a massive "one-time" cost, inference represents the ongoing energy cost every time the model is used. https://www.clarifai.com/blog/training-vs-inference/ https://nebius.com/blog/posts/difference-between-ai-training-and-inference https://www.finout.io/blog/the-new-economics-of-ai-balancing-training-costs-and-inference-spend#
+
+While a single inference pass uses a fraction of the energy of training, the aggregate volume is massive. For widely used models, inference emissions can surpass training emissions within weeks of deployment due to millions of daily queries. https://www.sciencedirect.com/science/article/pii/S2542435123003653 https://arxiv.org/html/2507.11417v1 https://arxiv.org/html/2311.16863v2
+
+A standard older type keyword search (like non-ai legacy Google) was computationally cheap. A generative AI query requires massive matrix multiplication operations on GPUs, estimated to use 10x to 30x more energy than a traditional search query.
+https://medium.com/@clima10/sorry-mr-ai-but-were-out-of-power-the-looming-energy-crisis-for-generative-ai-at-scale-533934085375 https://www.reworked.co/knowledge-findability/environmental-concerns-may-push-companies-to-rethink-how-they-use-genai/ https://www.eidosmedia.com/updater/technology/AI-Shakes-Up-Search-and-SEO https://one5c.com/google-search-ai-climate-impact-136965951/
+
+
+### 5.3. Agentic Emissions
+
+This is a rapidly growing and critically inefficient sector of AI emissions. Unlike a standard chatbot that answers a question once, an AI Agent is designed to operate autonomously to achieve a goal. 
+Agentic Emissions represent a recurring, compounding operational cost that scales linearly (or exponentially) with utility.
+
+So there is a base-increase of the computational spending from the start. It's not a single query at a time but a whole pipeline generating much more heating, therefore, in need of even stronger cooling systems that usually consume even more water. 
+
+A single user prompt to an agent does not result in one model inference. It triggers a "Chain of Thought" or a loop where the agent talks to itself, breaks the task into steps, queries the web, checks its work, and corrects errors. One user goal can trigger hundreds or thousands of API calls behind the scenes.
+
+In Standard LLMs it's one token in, probability distribution out. The compute cost is relatively deterministic based on the token count.
+
+In Agentic Workflows the "prompt" is merely the starting gun. The compute cost is non-deterministic because the agent decides how much compute it needs to solve the problem.
+
+sophisticated agents use "Reflection" steps. They generate code, then a second instance of the model critiques that code, and a third instance refines it.
+
+The context window (memory) grows with every step, making every subsequent inference computationally heavier than the last.
+
+
+##### 5.3.1 The "Loop of Doom" 
+
+Agents frequently get stuck. An agent might attempt to write code or browse a website, fail, analyze the error, and retry indefinitely.
+
+An agent could run on high-performance GPUs for hours, consuming kilowatt-hours of electricity, only to fail the task.
+
+An agent trying to debug a Python script may get stuck in a syntax error loop. It will run the code, see the error, try to fix it, introduce a new error, and repeat.
+
+If this runs on an H100 GPU cluster (drawing ~700W per chip), a 30-minute "Loop of Doom" consumes significant electricity with zero economic output. This is "Zombie Compute"—energy burned for dead processes.
+
+The physical consequence of the described current software pipeline  is heat.
+
+A chatbot server might have spikes of usage. An agent running a complex task keeps the GPUs pinned at 100% utilization for extended periods.
+
+The longer the agent "thinks" (loops), the more water is evaporated to keep the silicon from melting.
+
+For every kWh of energy consumed by the agent, a specific amount of water (often liters) is consumed.
+
+To prevent Agentic Emissions from becoming an environmental disaster, the industry needs to be looking toward several efficiency levers, like the ones we gonna talk about it here. 
+
+#### 5.3.2 Agentic Water Usage and Justifiability:
+
+As Data centers generate this immense heat; to keep the GPUs from melting, they end up consuming billions of liters of water anually for evaporative cooling because all companies worlwide are doing those processes in parallel. https://theconversation.com/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much-262901 https://www.digitalrealty.com/resources/articles/future-of-data-center-cooling https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/ https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/ https://www.aquatechtrade.com/news/digital-solutions/ai-water-usage https://mateussaldanha.substack.com/p/cooling-ai-data-centers-and-in-an https://ethicalgeo.org/the-cloud-is-drying-our-rivers-water-usage-of-ai-data-centers/ https://www.sangfor.com/blog/cloud-and-infrastructure/data-center-cooling-systems-challenges-and-solutions https://lifestyle.sustainability-directory.com/learn/what-are-alternative-cooling-technologies-for-data-centers-that-reduce-water-usage https://www.iceotope.com/learning-hub/insights/an-introduction-to-data-center-cooling/ https://lifestyle.sustainability-directory.com/learn/what-are-alternative-cooling-technologies-for-data-centers-that-save-water/ www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/understanding-direct-to-chip-cooling-in-hpc-infrastructure-a-deep-dive-into-liquid-cooling
+
+One Google data center in Iowa consumed 3.8 billion liters of water in one year. https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/ https://theconversation.com/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much-262901 https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/
+
+For an agent that spins in circles for hours without success, the water footprint becomes unjustifiably high. We are effectively evaporating potable water and burning fossil fuels for a software process that yields zero economic or utility value.
+
+### 5.4 Memory Systems Emissions
+
+Retrieval-Augmented Generation (RAG) and long-term memory allow AI to "remember" data, but this adds a distinct enviromental impact layer. https://www.f22labs.com/blogs/what-is-retrieval-augmented-generation-rag/
+
+The physical hard drives or solid-state drives (SSDs) used for long-term memory have a lifecycle impact, from raw material extraction to manufacturing, usage power consumption, and eventual disposal or recycling [ ](https://blog.loop.homes/the-environmental-impact-of-chatgpt)
+
+While RAG can reduce the need for larger, more expensive core models, the added steps of indexing data and performing lookups mean that the total operational computation per user query can be higher than simple, self-contained inference. https://tensorwave.com/glossary/retrieval-augmented-generation-rag https://www.tapclicks.com/blog/retrieval-augmented-generation-rag-what-is-it-and-its-benefits-for-your-business https://www.evolvingdev.com/post/using-retrieval-augmented-generation-rag-in-artificial-intelligence  https://www.codecademy.com/article/retrieval-augmented-generation-in-ai https://wandb.ai/onlineinference/genai-research/reports/Tutorial-MUVERA-Weights-Biases-Fast-scalable-multi-vector-retrieval--VmlldzoxMzY5MTUwOA#:~:text=When%20each%20query%20and%20document%20is%20represented,and%20resource%2Dintensive%2C%20especially%20as%20the%20dataset%20grows.
+
+To remember information, data must be converted into "embeddings" (mathematical vectors) and stored in high-performance databases. These databases require additional constant power to keep data indexed and ready for retrieval (gh-performance vector databases typically use significant RAM for fast indexing and retrieval). https://medium.com/@sateeshfrnd/vector-databases-storing-and-retrieving-ai-memory-efficiently-91a2d9542fd7 https://qdrant.tech/articles/what-is-a-vector-database 
+https://www.designveloper.com/blog/what-is-vector-database https://medium.com/@dresraceran/indexing-memory-and-database-0c402c3c394a
+
+The number of vectors and their dimensionality are the primary drivers of memory usage. A naive 1024-dimensional float vector can require substantial RAM for millions or billions of vectors
+
+Additional data associated with vectors, such as payload fields used for filtering, also contribute to memory usage. https://milvus.io/ai-quick-reference/how-does-vector-search-manage-memory-usage https://bhargavaparv.medium.com/managing-millions-of-high-dimensional-vectors-in-modern-vector-database-cbad318068fe https://qdrant.tech/documentation/guides/capacity-planning/
+
+As knowledge bases change, the models must constantly re-read and re-embed documents. Continuously updating the "memory" of an AI system creates a baseline energy load that exists even when no users are querying the system.
+
+Training data (petabytes of text and video) must be stored on servers that run 24/7. These servers are replicated across multiple geographies for redundancy, meaning the energy cost of storing the dataset is multiplied by 2x or 3x.
+
+Moving petabytes of data between data centers for training or fine-tuning generates significant heat and requires extensive networking gear (switches, routers, fiber optics), all of which have their own energy footprints.
+
+### 5.5 Rare earth metals 
+
+The manufacturing of H100 or A100 GPUs requires mining rare earth metals and ultra-precise silicon lithography. This process is incredibly carbon-intensive. If an AI system requires new hardware upgrades every 18 months, the embodied carbon of the physical chips often outweighs the electricity used to run them.
+
+Over 70% of the world's cobalt comes from the Democratic Republic of Congo (DRC). https://www.facebook.com/channelsforum/posts/the-drc-produces-more-than-70-percent-of-the-worlds-supply-of-cobalt-which-is-es/1493781458776267/https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/cobalt-facts
+
+The neoliberalist dfinition of 'green energy transition' was one of the last hopes of keeping our home planet from imploding.
+
+While the DRC is home to some of the richest mineral deposits in the world, supplying around 70 percent of the world’s cobalt, its people have remained deeply impoverished. https://farmonaut.com/mining/cobalt-siddharth-kara-7-ethical-issues-in-drc-mining
+
+entire communities are often exposed to dangerous working conditions, toxic pollution and violence. Some areas are under the control of armed groups, leaving locals without the basic right to live and work safely.  https://thinklandscape.globallandscapesforum.org/73584/cobalt-mining-dr-congo-green-transition/
+
+This has led to DRC being described as a green sacrifice zone, a place exploited in the name of sustainability. https://intpolicydigest.org/your-smart-device-is-powered-by-child-labour/ https://www.chemistryworld.com/news/congos-cobalt-conundrum/4021696.article  https://www.savethechildren.net/stories/drc-cobalt-mines-child-labour-and-green-transition
+
+Children in mining areas in the Democratic Republic of Congo (DRC) expressed in artistic forms to their communities the child labour-free future they want. https://www.ilo.org/resource/news/tiny-mighty-voices-against-child-labour-cobalt-mining
+
+There are approximately 110,000 to 150,000 artisanal miners in this region, who work alongside much larger industrial operations. These artisanal miners, referred to as creuseurs in the DRC, mine by hand using the most basic tools to dig out rocks from tunnels deep underground.  https://www.amnesty.org/fr/wp-content/uploads/2021/05/AFR6231832016ENGLISH.pdf https://borgenproject.org/human-rights-abuses-in-the-drc/
+
+Artisanal miners include children as young as seven who scavenge for rocks containing cobalt in the discarded by-products of industrial mines, and who wash and sort the ore before it is sold.  https://www.amnesty.org/fr/wp-content/uploads/2021/05/AFR6231832016ENGLISH.pdf https://www.dol.gov/agencies/ilab/reports/child-labor/list-of-goods/supply-chains/lithium-ion-batteries https://www.cfr.org/blog/why-cobalt-mining-drc-needs-urgent-attention https://www.businessinsider.com/photos-terrible-conditions-cobalt-mining-industry-to-meet-battery-demands-2023-2 https://farmonaut.com/mining/blood-cobalt-mining-in-drc-7-urgent-ethical-challenges-2025 https://adf-magazine.com/2023/10/chinese-mining-wrecking-lives-in-drc/
+
+Chronic exposure to dust containing cobalt can result in a potentially fatal lung disease, called “hard metal lung disease.” Inhalation of cobalt particles can also cause “respiratory sensitization, asthma, shortness of breath, and decreased pulmonary function”, and sustained skin contact with cobalt can lead to dermatitis. Yet researchers found that the vast majority of miners, who spend long hours every day working with cobalt, do not have the most basic of protective equipment, such as gloves, work clothes or facemasks. https://www.amnesty.org/fr/wp-content/uploads/2021/05/AFR6231832016ENGLISH.pdf  https://www.wilsoncenter.org/blog-post/drc-mining-industry-child-labor-and-formalization-small-scale-mining https://www.amnesty.org/en/latest/news/2023/09/drc-cobalt-and-copper-mining-for-batteries-leading-to-human-rights-abuses/ https://www.wbur.org/onpoint/2024/03/13/human-cost-cobalt-modern-slavery-in-the-democratic-republic-of-congo https://www.npr.org/sections/goatsandsoda/2023/02/01/1152893248/red-cobalt-congo-drc-mining-siddharth-kara https://abcnews.go.com/International/cobalt-mining-transforms-city-democratic-republic-congo-satellite/story?id=96795773 https://www.theguardian.com/global-development/2021/nov/08/cobalt-drc-miners-toil-for-30p-an-hour-to-fuel-electric-cars 
+
+
+### 5.6 Teacher Models
+
+There's also a hidden or externalized costs that are often excluded from standard energy efficiency metrics, which tend to focus only on the final model's inference (use) or training (initial development).
+
+The full energy footprint of a deployed, resource-equilibrated AI model includes several computationally expensive phases.
+
+The initial Superior Model Training, the massive training run of the largest possible "Teacher" model, often conducted in highly secure, isolated (air-gapped) data centers.
+
+The "superior model" is then used to generate a vast amount of high-quality synthetic data—the "content"—which serves as the training dataset for the smaller model.
+
+This is known as inference at scale on the teacher model. While inference is less power-intensive than training, performing it for billions of data points to create a distillation dataset adds substantial, often unquantified, operational energy usage.
+
+Knowledge Distillation is the process of training a smaller, faster "Student" model using the outputs (the "knowledge") of the large "Teacher" model.
+
+Even though the student model is smaller and more efficient for final deployment, the distillation process itself is a significant training run that requires substantial energy to efficiently transfer the knowledge.
+
+
+### 5.7 Errors and bugged runs
+
+Failures in training and auxiliary system processes, caused by issues like package conflicts, data corruption, or poor model fit (under/overfitting), lead to a severely additional resource consumption.
+
+
+### 5.8 Technical benchmarks
+
+Many niche models possess unique value but are discarded because they fail to top general technical benchmarks. Researchers often evaluate dozens of models rapidly; if a model does not impress immediately—sometimes due merely to faulty inference code rather than the model itself—it is permanently set aside. This premature abandonment represents a significant sunk cost, rendering the substantial water consumption and carbon emissions expended during training completely wasted.
+
+This turns the entire training process into an environmental tragedy, wasting the vast amounts of energy and water used to create a tool that no one will ever use.
+
+The core problem lies in 'unconnected' technical benchmarks. These metrics are so hyper-specific that they create a vacuum, effectively stripping away systems thinking. They evaluate models as if they exist in isolation, ignoring the crucial reality that AI is woven into the fabric of society and physically dependent on our planetary biomes. By optimizing for a narrow score, we ignore the holistic cost of the system. Standard benchmarks fail because they lack a holistic view, as they ignore how the pipelines extract from our biomes and impacts the social and enviromental fabric.
+
+There are thousands of distinct physical locations (Data Centers) that compete with local agriculture and residents for water tables and energy grids.
+
+A benchmark might say a model is "State of the Art" (SOTA), but if that SOTA status requires 3x the energy for 1% better reasoning, a holistic benchmark, like eco-benchmark, would rate it as a failure.
+
+models that may be niche great but never reach technical benchmarks, not even being used if maybe didnt impress enough in the first impression of a researcher that tests many models. maybe it was not even something about the model but in the infernece code, still, another resource-consumption wasted, with the water consumption and emissions described ehere.
+
+
 ---
 
 Ronni Ross  
