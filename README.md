@@ -217,7 +217,7 @@ The full energy footprint of a deployed, resource-equilibrated AI model includes
 
 The initial Superior Model Training, the massive training run of the largest possible "Teacher" model, often conducted in highly secure, isolated (air-gapped) data centers.
 
-The "superior model" is then used to generate a vast amount of high-quality synthetic data—the "content"—which serves as the training dataset for the smaller model.
+The "superior model" is then used to generate a vast amount of high-quality synthetic data, the "content", which serves as the training dataset for the smaller model.
 
 This is known as inference at scale on the teacher model. While inference is less power-intensive than training, performing it for billions of data points to create a distillation dataset adds substantial, often unquantified, operational energy usage.
 
