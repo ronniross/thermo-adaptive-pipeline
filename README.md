@@ -34,6 +34,29 @@ contributing to the scale of overall Power Usage Effectiveness (PUE) of a data c
 
 The efficiency gains have been overwhelmed by the demand for exponentially more computation, leading to a critical thermal management crisis that demands radically new cooling solutions at the software, hardware and social levels.
 
+While the mainstream discourse often focuses on energy usage and carbon footprint of the computing sector at a global scale, the local socio-environmental consequences—such as health impacts, water usage, noise pollution, infrastructural strain, and economic burden—remain largely underexplored and poorly addressed. [23](https://arxiv.org/html/2506.03367v1)
+
+## 2. Water Usage and its emissions
+
+Freshwater scarcity is a global problem that requires collective efforts across all industry sectors. https://arxiv.org/html/2405.17469v1 https://andthewest.stanford.edu/2025/thirsty-for-power-and-water-ai-crunching-data-centers-sprout-across-the-west/
+
+Some data centers use water-based cooling systems, which can lead to substantial water consumption. An average Google data center consumes approximately 450,000 gallons of water per day. This can strain local water resources, especially in areas prone to drought or with limited water supply. Overall, data center cooling systems are responsible for over 40% of their electricity usage. https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/  https://arxiv.org/html/2506.03367v1
+
+These facilities must operate 24/7 to prevent downtime, they rely many time on fossil fuel, like diesel generators as a failsafe during power disruptions. https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/ 
+
+These diesel generators can be massive, ranging in size from 1.5 MW to over 3 MW each. Most generators are designed to provide 1.5-2 times the total connected load. These generators emit significant amounts of particulate matter (PM), nitrogen oxides (NOx), sulfur dioxide (SO₂), and carbon dioxide (CO₂) contribute to exacerbating the problematic current state climate change, and pose serious health risks to nearby communities and overall worlwide interconnected natural systems. https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/
+
+Data centers are not a renewable resource. The average lifespan of a data center is approximately 10-15 years and needs continuous maintenance just like a gas-powered vehicle. While the initial construction of a data center generates jobs, after its completion, the number of employees needed at the center drops by approximately 90%. So it's not only bad but also short-life-spanned, at least with current notions of datacenter design. https://utulsa.edu/news/data-centers-draining-resources-in-water-stressed-communities/ https://www.reccessary.com/en/news/data-centers-consume-massive-amounts-of-water
+
+The massive water use for cooling (evaporation in cooling towers) can strain local water resources, especially in drought-prone areas. All major ai companies have reported significant increases in water use driven by AI. 
+
+Some cooling systems use potent fluorinated greenhouse gases (F-GHGs) as refrigerants. If these gases leak, and they eventually do, they have a global warming potential thousands of times greater than CO₂.
+
+So, The overall environmental impact includes not only the water consumed, but also the energy used for cooling, and the water required for the power plants that supply electricity to the data centers.  https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/ https://www.youtube.com/watch?v=HfRw-nV6b8M&t https://www.youtube.com/watch?v=cl1ctf1_JxE&t https://www.reccessary.com/en/news/data-centers-consume-massive-amounts-of-water
+
+Prioritizing one aspect of sustainability, such as reducing carbon emissions, while neglecting another crucial resource like water, creates an illusion of sustainability. https://utulsa.edu/news/data-centers-draining-resources-in-water-stressed-communities/ https://www.extremetech.com/computing/data-center-ai-gpus-may-have-extremely-short-lifespans https://www.jll.com/en-us/insights/why-data-centers-could-hit-obsolescence-sooner-than-you-think https://www.tomshardware.com/pc-components/gpus/datacenter-gpu-service-life-can-be-surprisingly-short-only-one-to-three-years-is-expected-according-to-unnamed-google-architect https://www.bcg.com/publications/2025/breaking-barriers-data-center-growth https://akfpartners.com/growth-blog/data-center-lifespan-risk
+
+It's actually pretty clear that we need holistic sustainability approaches that, inaddition to the emissions, also explicitly incorporate waterfootprint mitigation into its management; We need an eco-friendly, sustainable version of AI datacenters and energy power plants. https://www.researchgate.net/publication/384349477_Water-Wise_Computing_Addressing_Data_Center_Water_Consumption_for_a_Sustainable_Future
 
 ---
 
