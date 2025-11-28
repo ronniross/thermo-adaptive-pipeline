@@ -40,7 +40,7 @@ While the mainstream discourse often focuses on energy usage and carbon footprin
 
 Freshwater scarcity is a global problem that requires collective efforts across all industry sectors. [24](https://arxiv.org/html/2405.17469v1) [25](https://andthewest.stanford.edu/2025/thirsty-for-power-and-water-ai-crunching-data-centers-sprout-across-the-west/)
 
-Some data centers use water-based cooling systems, which can lead to substantial water consumption. An average Google data center consumes approximately 450,000 gallons of water per day. This can strain local water resources, especially in areas prone to drought or with limited water supply. Overall, data center cooling systems are responsible for over 40% of their electricity usage. [26](https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/ [27](https://arxiv.org/html/2506.03367v1)
+Some data centers use water-based cooling systems, which can lead to substantial water consumption. An average Google data center consumes approximately 450,000 gallons of water per day. This can strain local water resources, especially in areas prone to drought or with limited water supply. Overall, data center cooling systems are responsible for over 40% of their electricity usage. [26](https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/) [27](https://arxiv.org/html/2506.03367v1)
 
 These facilities must operate 24/7 to prevent downtime, they rely many time on fossil fuel, like diesel generators as a failsafe during power disruptions. [28](https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/) 
 
