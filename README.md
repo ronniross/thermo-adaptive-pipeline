@@ -68,6 +68,36 @@ The carbon dioxide (CO₂) and other greenhouse gases emitted by the power plant
 
 The energy sector, including natural gas operations, is a major source of anthropogenic methane emissions, primarily from fugitive leaks during extraction, processing, and transportation. Methane is the primary component of natural gas, and unburned gas leaking into the atmosphere is a potent greenhouse gas, with a warming effect over 80 times stronger than $\text{CO}_{2}$ over a 20-year period. AI Data centers use massive amounts of electricity. The environmental impact of this electricity consumption depends on the energy source used. If data centers are powered by natural gas-fired electricity, their indirect (Scope 3) emissions include the upstream methane leaks from the gas supply chain. The data center itself primarily produces $\text{CO}_{2}$ from the combustion of the gas at the power plant, along with the release of other heat-trapping gases. [56](https://miq.org/thought-leadership/tech-firms-choosing-natural-gas-to-power-data-centers-should-ensure-it-has-been-third-party-certified-as-low-methane-emissions) [57](https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai) [58](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks) [59](https://www.unep.org/explore-topics/energy/facts-about-methane) [60](https://www.naturalgasworld.com/whats-up-with-methane-gas-in-transition-98516) [61](https://www.unep.org/explore-topics/energy/facts-about-methane) [62](https://www.epa.gov/ghgemissions/methane-emissions) [63](https://science.nasa.gov/earth/explore/earth-indicators/methane/) [64](https://www.ejosdr.com/download/harnessing-artificial-intelligence-for-methane-emissions-control-in-industrial-natural-gas-engines-17282.pdf)  [65](https://ember-energy.org/latest-insights/from-ai-to-emissions-aligning-asean-digital-growth-with-energy-transition/greening-data-centres/) [66](https://www.iea.org/reports/energy-and-ai/executive-summary)
 
+## 4. Sulfur Dioxide ($SO_2$) Nitrogen Oxides ($NO_x$) and Particulate Matter (PM) Emissions
+
+
+While Carbon Dioxide ($CO_2$) often dominates the conversation about AI's environmental impact, **Sulfur Dioxide ($SO_2$)**, **Nitrogen Oxides ($NO_x$)**, and **Particulate Matter (PM)** are critical pollutants associated with AI data centers. https://netzeroinsights.com/resources/data-centers-environmental-cost/ https://cap2i.eu/news/environmental-impact-of-data-centers-sustainable-solutions-5.php  https://blogs.lse.ac.uk/usappblog/2025/08/07/the-local-and-global-environmental-footprint-of-the-ai-driven-boom-in-data-centers https://blog.ucs.org/pablo-ortiz/what-are-the-environmental-impacts-of-artificial-intelligence https://www.socomec.co.uk/en-gb/solutions/business/data-centre/green-data-centres-balancing-performance-and-environmental-responsibility https://netzeroinsights.com/resources/data-centers-environmental-cost/ 
+
+Unlike $CO_2$, which is a global greenhouse gas, these are **local air pollutants** that directly affect the health of communities nearby. They appear in AI data center emissions through two main channels: https://ecology.wa.gov/air-climate/air-quality/data-centers https://lifestyle.sustainability-directory.com/learn/what-are-the-primary-air-pollutants-from-fossil-fuel-powered-data-centers/ https://www.linkedin.com/pulse/environmental-impacts-ai-data-centers-conundrum-society-odutola-fbeoc/ https://www.staxengineering.com/stax-hub/the-environmental-impact-of-data-centers/ https://www.eea.europa.eu/mobile/data-and-maps/indicators/emissions-of-primary-particles-and-5/eea-32-sulphur-dioxide-so2-emissions-1 https://envirodatagov.org/blogs/communities-close-to-epa-regulated-data-centers-face-heightened-air-pollution https://arxiv.org/abs/2509.21312 https://www.epa.gov/power-sector/power-plants-and-neighboring-communities https://www.azocleantech.com/article.aspx?ArticleID=2042
+
+As previously mentioned, the most direct source of these pollutants from data centers is not the computers themselves, but the massive banks of diesel generators kept on-site. AI data centers require 100% uptime; if the grid fails, they must generate their own power immediately.
+
+* **Nitrogen Oxides ($NO_x$):** Diesel engines are notorious for producing high levels of $NO_x$. When data centers run these generators (for routine testing, maintenance, or during outages), they release concentrated plumes of $NO_x$.
+    * *Impact:* Reacts with other chemicals in the air to form smog and acid rain. It irritates human lungs and can exacerbate asthma.
+* **Particulate Matter (PM):** Diesel combustion produces "diesel soot," which consists of fine particles ($PM_{2.5}$).
+    * *Impact:* These microscopic particles can penetrate deep into the lungs and enter the bloodstream, causing cardiovascular and respiratory disease.
+* **Sulfur Dioxide ($SO_2$):** While modern "ultra-low sulfur diesel" has reduced this, older generators or those with lower fuel standards still emit $SO_2$.
+    * *Impact:* A precursor to acid rain and a severe respiratory irritant.
+
+AI training clusters (like those used for LLMs) use vastly more power than traditional web servers. This requires larger backup generator capacities. In places like Northern Virginia (a global data center hub), data centers have sought permits to run diesel generators more frequently due to grid instability, leading to local air quality violations.
+
+
+| Pollutant | Primary On-Site Source (Data Center) | Primary Off-Site Source (Grid) | Primary Health/Env Risk |
+| :--- | :--- | :--- | :--- |
+| **$NO_x$** | Diesel Backup Generators | Coal & Gas Power Plants | Smog formation, asthma, acid rain |
+| **$SO_2$** | Diesel Fuel (impurities) | Coal Power Plants | Acid rain, respiratory irritation |
+| **PM** | Diesel Exhaust (Soot) | Coal combustion ash | Lung damage, heart disease |
+
+Because of the physics of these pollutants, they create "hotspots."
+* **$CO_2$** disperses into the global atmosphere.
+* **$NO_x$ and PM** hang in the air *locally*.
+This means communities living next to "Hyperscale" AI data centers face a **direct health risk** from the exhaust of backup generators, distinct from the global climate change risk of the electricity usage.
+
 ---
 
 Ronni Ross  
