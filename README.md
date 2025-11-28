@@ -233,7 +233,7 @@ Failures in training and auxiliary system processes, caused by issues like packa
 
 ### 5.8 Technical benchmarks
 
-Many niche models possess unique value but are discarded because they fail to top general technical benchmarks. Researchers often evaluate dozens of models rapidly; if a model does not impress immediately—sometimes due merely to faulty inference code rather than the model itself—it is permanently set aside. This premature abandonment represents a significant sunk cost, rendering the substantial water consumption and carbon emissions expended during training completely wasted.
+Many niche models possess unique value but are discarded because they fail to top general technical benchmarks. Researchers often evaluate dozens of models rapidly; if a model does not impress immediately, sometimes due merely to faulty inference code rather than the model itself, it is permanently set aside. This premature abandonment represents a significant sunk cost, rendering the substantial water consumption and carbon emissions expended during training completely wasted.
 
 This turns the entire training process into an environmental tragedy, wasting the vast amounts of energy and water used to create a tool that no one will ever use.
 
