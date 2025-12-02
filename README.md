@@ -129,7 +129,7 @@ In Standard LLMs it's one token in, probability distribution out. The compute co
 
 In Agentic Workflows the "prompt" is merely the starting gun. The compute cost is non-deterministic because the agent decides how much compute it needs to solve the problem.
 
-sophisticated agents use "Reflection" steps. They generate code, then a second instance of the model critiques that code, and a third instance refines it.
+Sophisticated agents use "Reflection" steps. They generate code, then a second instance of the model critiques that code, and a third instance refines it.
 
 The context window (memory) grows with every step, making every subsequent inference computationally heavier than the last.
 
@@ -196,7 +196,7 @@ The neoliberalist dfinition of 'green energy transition' was one of the last hop
 
 While the DRC is home to some of the richest mineral deposits in the world, supplying around 70 percent of the world’s cobalt, its people have remained deeply impoverished. [129](https://farmonaut.com/mining/cobalt-siddharth-kara-7-ethical-issues-in-drc-mining)
 
-entire communities are often exposed to dangerous working conditions, toxic pollution and violence. Some areas are under the control of armed groups, leaving locals without the basic right to live and work safely. [130](https://thinklandscape.globallandscapesforum.org/73584/cobalt-mining-dr-congo-green-transition/)
+Entire communities are often exposed to dangerous working conditions, toxic pollution and violence. Some areas are under the control of armed groups, leaving locals without the basic right to live and work safely. [130](https://thinklandscape.globallandscapesforum.org/73584/cobalt-mining-dr-congo-green-transition/)
 
 This has led to DRC being described as a green sacrifice zone, a place exploited in the name of sustainability. [131](https://intpolicydigest.org/your-smart-device-is-powered-by-child-labour/) [132](https://www.chemistryworld.com/news/congos-cobalt-conundrum/4021696.article) [133](https://www.savethechildren.net/stories/drc-cobalt-mines-child-labour-and-green-transition)
 
@@ -243,7 +243,7 @@ There are thousands of distinct physical locations (Data Centers) that compete w
 
 A benchmark might say a model is "State of the Art" (SOTA), but if that SOTA status requires 3x the energy for 1% better reasoning, a holistic benchmark, like eco-benchmark, would rate it as a failure.
 
-models that may be niche great but never reach technical benchmarks, not even being used if maybe didnt impress enough in the first impression of a researcher that tests many models. maybe it was not even something about the model but in the infernece code, still, another resource-consumption wasted, with the water consumption and emissions described ehere.
+Models that may be niche great but never reach technical benchmarks, not even being used if maybe didnt impress enough in the first impression of a researcher that tests many models. maybe it was not even something about the model but in the infernece code, still, another resource-consumption wasted, with the water consumption and emissions described ehere.
 
 
 ---
