@@ -247,18 +247,20 @@ A benchmark might say a model is "State of the Art" (SOTA), but if that SOTA sta
 Models that may be niche great but never reach technical benchmarks, not even being used if maybe didnt impress enough in the first impression of a researcher that tests many models. maybe it was not even something about the model but in the infernece code, still, another resource-consumption wasted, with the water consumption and emissions described ehere.
 
 
-# Part II - Remedies: Applying Carnot's Principles to Sustainable and Ecological Machine Learning Pipelines e
+# Part II - Applying Carnot's Principles to Sustainable and Ecological Machine Learning Pipelines e
 
-## 6.1 The Principle of Reversibility
+## 6. Remedies
+
+### 6.1 The Principle of Reversibility
 Carnot conceived of an ideal, reversible cycle (now called the Carnot Cycle), arguing that the most efficient engine must be one that could be run perfectly backward to undo the initial process.
 This notion of reversibility became a core concept in thermodynamics. It demonstrated that factors like friction and heat transfer across a finite temperature difference (like the unnecessary "fall" of caloric) are the sources of irreversible losses and reduced efficiency in real engines. [150](https://www.pearson.com/channels/physics/learn/patrick/the-second-law-of-thermodynamics/carnot-cycle) [151](https://eaglepubs.erau.edu/introductiontoaerospaceflightvehicles/chapter/thermodynamic-foundations/) [152](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_7.htm) [153](https://fiveable.me/key-terms/thermodynamics-i/carnot-efficiency) [154](https://fiveable.me/intro-college-physics/unit-15/4-carnots-perfect-heat-engine-law-thermodynamics-restated/study-guide/2E0PhzloNe28xDBn)[155](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1490&context=icec) [156](https://royalsocietypublishing.org/rsta/article/373/2039/20140348/114855/Heat-work-and-subtle-fluids-a-commentary-on-Joule) [157](https://readingroo.ms/7/1/2/9/71291/71291-h/71291-h.htm) [158](https://dokumen.pub/introduction-to-chemical-physics.html) [159](https://fiveable.me/key-terms/thermodynamics-i/carnot-efficiency) [160](https://www.mdpi.com/1099-4300/27/5/502)
 
-## 6.2  Maximum Efficiency is Temperature Dependent
+### 6.2  Maximum Efficiency is Temperature Dependent
 Carnot correctly concluded that the maximum efficiency of any heat engine operating between a high-temperature reservoir ($T_H$) and a low-temperature reservoir ($T_C$) depends only on those two temperatures, and is independent of the working substance (steam, gas, etc.). [161](https://testbook.com/objective-questions/mcq-on-fundamental-processes--63a451aec9ba648bc86fbf43) [162](https://www.sciencedirect.com/topics/engineering/carnot-limit) [163](https://fiveable.me/key-terms/thermodynamics-i/carnot-efficiency-equation) [164](https://study.com/academy/lesson/efficiency-the-carnot-cycle-equations-examples.html)
 
 This statement, known as Carnot's Theorem, is a cornerstone of the Second Law of Thermodynamics. It sets a theoretical upper limit for engine performance: $\eta_{\text{max}} = 1 - \frac{T_C}{T_H}$. He was on the right track in identifying the temperature difference as the determining factor, much like the height of the waterfall is the key factor for a waterwheel. [165](https://www.calctool.org/thermodynamics/carnot-efficienc)
 
-### 6.2.1 How the Caloric Flaw Was Replaced
+#### 6.2.1 How the Caloric Flaw Was Replaced
 
 Sadi Carnot's original 1824 work assumed the prevailing caloric theory, which posited that heat was a conserved, invisible fluid that flowed from hot to cold bodies, much like water falling through a waterwheel to produce power. This view was later found to be incorrect. [166](https://fiveable.me/thermodynamics-i/unit-6/carnot-cycle-carnot-principles/study-guide/AMSmCjZ6JQrqGRtY) [167](https://www.mdpi.com/1099-4300/23/8/1078) [168](https://physics.stackexchange.com/questions/316134/why-was-caloric-theory-accepted-despite-observations-that-heat-was-produced-by-f) [169](https://www.mdpi.com/1099-4300/20/8/584) [170](https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_(OpenStax)/University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/04%3A_The_Second_Law_of_Thermodynamics/4.06%3A_The_Carnot_Cycle) 
 
@@ -276,7 +278,7 @@ The correct principle established that: Heat is a Form of Energy: Heat is not a
 
 While his foundational assumption was incorrect, Carnot's genius lay in that his conclusions about efficiency and the ideal cycle were mathematically sound and remain valid because they correctly identified the critical role of temperature differences. His work laid the groundwork for the Second Law of Thermodynamics and also for the next section where I will try to connect his ideas to Machine Learning. [189](https://pmc.ncbi.nlm.nih.gov/articles/PMC7514258) [190](https://arxiv.org/pdf/2501.15787) [191](https://www.mdpi.com/1099-4300/20/8/584) [192](https://www.ck12.org/book/cbse_physics_book_class_xi/section/11.6/) [193](https://www.asme.org/about-asme/engineering-history/landmarks/275-reflections-on-the-motive-power-of-fire-and-on-machines-fitted-to-develop-that-power)
 
-### 6.2.2 Clausius's Contribution - Entropy
+#### 6.2.2 Clausius's Contribution - Entropy
 
 Rudolf Clausius introduced the concept of entropy ($S$), which is closely related to the irreversibility Carnot had identified. Clausius showed that in a reversible Carnot cycle, the ratio of heat transferred to the temperature is what is conserved: $\frac{Q_H}{T_H} = \frac{Q_C}{T_C}$. This equation replaced the idea of conserved caloric and formally defined the maximum efficiency.
 Carnot's brilliant framework—the cycle, the concept of reversibility, and the maximum efficiency limit based on temperatures—was essentially transferred from the incorrect caloric theory to the correct mechanical theory of heat (thermodynamics).
