@@ -247,7 +247,7 @@ A benchmark might say a model is "State of the Art" (SOTA), but if that SOTA sta
 Models that may be niche great but never reach technical benchmarks, not even being used if maybe didnt impress enough in the first impression of a researcher that tests many models. maybe it was not even something about the model but in the infernece code, still, another resource-consumption wasted, with the water consumption and emissions described ehere.
 
 
-# Part II - Applying Carnot's Principles to Sustainable and Ecological Machine Learning Pipelines e
+# Part II - Applying Carnot's Principles to Sustainable and Ecological Machine Learning Pipelines
 
 ## 6. Remedies
 
